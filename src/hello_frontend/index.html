@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Wealth Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Prime Wealth Management</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <style>
+        /* Global Styles */
+        body {
+          margin: 0;
+          font-family: 'Roboto', sans-serif;
+          color: #333;
+          line-height: 1.6;
+        }
+    
+        h1, h2, h3 {
+          margin-bottom: 10px;
+        }
+    
+        p {
+          margin-bottom: 15px;
+        }
+    
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+    
+        /* Navbar Styles */
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 40px;
+          background: #004080;
+          color: #fff;
+        }
+    
+        .navbar .logo {
+          font-size: 24px;
+          font-weight: bold;
+        }
+    
+        .nav-links {
+          list-style: none;
+          display: flex;
+          gap: 20px;
+        }
+    
+        .nav-links li {
+          display: inline;
+        }
+    
+        .nav-links a {
+          color: #fff;
+          font-weight: bold;
+          transition: color 0.3s ease;
+        }
+    
+        .nav-links a:hover {
+          color: #ffd700;
+        }
+    
+        .cta {
+          background: #ffd700;
+          color: #004080;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-weight: bold;
+          transition: background 0.3s ease;
+        }
+    
+        .cta:hover {
+          background: #e6b800;
+        }
+    
+        /* Hero Section */
+        .hero {
+          text-align: center;
+          padding: 100px 20px;
+          background: linear-gradient(to right, #004080, #0066cc);
+          color: #fff;
+        }
+    
+        .hero-content h1 {
+          font-size: 48px;
+          margin-bottom: 20px;
+        }
+    
+        .hero-content p {
+          font-size: 20px;
+          margin-bottom: 30px;
+        }
+    
+        .btn-primary {
+          background: #ffd700;
+          color: #004080;
+          padding: 15px 30px;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+    
+        .btn-primary:hover {
+          background: #e6b800;
+        }
+    
+        /* Services Section */
+        .services-section {
+          padding: 50px 20px;
+          background: #f4f4f4;
+          text-align: center;
+        }
+    
+        .services-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+    
+        .service-card {
+          background: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          width: 300px;
+          transition: transform 0.3s ease;
+        }
+    
+        .service-card:hover {
+          transform: scale(1.05);
+        }
+    
+        .service-card img {
+          width: 100px;
+          margin-bottom: 15px;
+        }
+    
+        /* About Section */
+        .about-section {
+          padding: 50px 20px;
+          background: #fff;
+          text-align: center;
+        }
+    
+        .about-section img {
+          max-width: 100%;
+          border-radius: 10px;
+          margin-top: 20px;
+        }
+    
+        /* Testimonials Section */
+        .testimonials-section {
+          padding: 50px 20px;
+          background: #004080;
+          color: #fff;
+          text-align: center;
+        }
+    
+        .testimonials-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+    
+        .testimonial-card {
+          background: #0066cc;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+          width: 300px;
+        }
+    
+        .testimonial-card span {
+          display: block;
+          margin-top: 10px;
+          font-weight: bold;
+          color: #ffd700;
+        }
+    
+        /* Contact Section */
+        .contact-section {
+          padding: 50px 20px;
+          background: #f4f4f4;
+          text-align: center;
+        }
+    
+        .contact-form {
+          max-width: 600px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+    
+        .contact-form input, .contact-form textarea {
+          width: 100%;
+          padding: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+    
+        .contact-form button {
+          background: #004080;
+          color: #fff;
+          padding: 15px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+    
+        .contact-form button:hover {
+          background: #003366;
+        }
+    
+        /* Footer Section */
+        .footer {
+          background: #fff;
+          color: #000;
+          text-align: center;
+          padding: 20px 0;
+        }
+    
+        .footer .social-icons a {
+          margin: 0 10px;
+          display: inline-block;
+        }
+    
+        .footer .social-icons img {
+          width: 24px;
+          height: 24px;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- Same HTML body as provided earlier -->
+    </body>
+    </html>
+    </style>
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Prime Wealth</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="cta">Get Started</button>
+    </nav>
+    <div class="hero-content">
+      <h1>Secure Your Financial Future</h1>
+      <p>Expert guidance to grow, protect, and optimize your wealth.</p>
+      <button class="btn-primary">Explore Plans</button>
+    </div>
+  </header>
+
+  <section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="images/investment.png" alt="Investment Management">
+        <h3>Investment Management</h3>
+        <p>Maximize your returns with our diversified investment strategies.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/retirement planning.png" alt="Retirement Planning">
+        <h3>Retirement Planning</h3>
+        <p>Secure a comfortable future with personalized retirement plans.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/risk assessment.png" alt="Risk Assessment">
+        <h3>Risk Assessment</h3>
+        <p>Comprehensive risk management tailored to your goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>At Prime Wealth Management, we believe in crafting personalized financial solutions to suit your unique aspirations. Our team of certified experts brings decades of experience to the table, ensuring your financial journey is seamless and rewarding.</p>
+  </section>
+
+  <section id="testimonials" class="testimonials-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <p>"Prime Wealth helped me transform my finances. Their team is amazing!"</p>
+        <span>- John D.</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"I feel so much more secure about my future thanks to their advice."</p>
+        <span>- Sarah K.</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"The personalized approach is what sets them apart. Highly recommend!"</p>
+        <span>- Michael B.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Ready to take the next step in managing your wealth? Reach out to us today!</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Prime Wealth Management. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><img  src="images/facebook.svg" alt="Facebook"></a> 
+      <a href="#"><img src="images/insta.svg" alt="Instagram"></a>
+      <a href="#"><img src="images/link.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+</body>
+</html>
